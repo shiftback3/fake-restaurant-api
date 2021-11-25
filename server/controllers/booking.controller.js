@@ -52,13 +52,13 @@ module.exports = {
                 service:'gmail',
                 // secure: true,
                 auth: {
-                  user: 'apprestuarant7@gmail.com',
-                  pass: 'Ogbuzs@007'
+                  user: process.env.EMAIL_USER,
+                  pass: process.env.EMAIL_PASS
                 }
               });
               
               var mailOptions = {
-                from: 'apprestaurant7@gmail.com',
+                from: process.env.EMAIL_USER,
                 to: result2.email,
                 // to: result.email,
                 subject: 'Restaurant reservation Details',

@@ -80,7 +80,7 @@ module.exports = {
         //     return res.send({success: true, data: result, message: 'Restaurant retrieved successfully'});
         // })
         // const key = process.env.GOOGLE_API_KEY
-        const key = 'AIzaSyDMNS8cYGvzaL576kvcfqZWOG99DwmfJJE'
+        const key = process.env.GOOGLE_API_KEY
         try {
             
             const category = req.cuisine
@@ -158,7 +158,7 @@ module.exports = {
     //         return res.send({success: true, message: 'Location already seeded'});
     //     }else {
 
-        const key = 'AIzaSyDMNS8cYGvzaL576kvcfqZWOG99DwmfJJE'
+        const key = process.env.GOOGLE_API_KEY
         try {
             const category = req.cuisine
             const location = req.location
