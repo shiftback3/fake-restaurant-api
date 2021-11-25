@@ -1,6 +1,9 @@
 {
   "name": "restaurant-API",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.16.0"
+  },
   "description": "This app fetch restaurants from different location of the world",
   "main": "index.js",
   "scripts": {
