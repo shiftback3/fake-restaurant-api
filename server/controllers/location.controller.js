@@ -8,7 +8,7 @@ const locations = [
     { "name": "Abuja", "slug": "abuja"  },
     { "name": "Johannesburg", "slug": "johannesburg" },
     { "name": "Manchester", "slug": "manchester"  },
-    { "name": "New York", "slug": "new+york+city"  },
+    { "name": "New York", "slug": "new york"  },
     { "name": "London", "slug": "london"  },
     { "name": "Nairobi", "slug": "nairobi"  },
     { "name": "Kampala", "slug": "kampala"  },

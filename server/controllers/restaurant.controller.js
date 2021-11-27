@@ -229,10 +229,12 @@ module.exports = {
             }
             else{
                 let cuisines = ['Chinese','French','Italian','Indian','Japanese','Moroccan','Spanish','Thai','Turkish','Indonesian'];
+                let location = ['Abuja','Lagos','Johannesburg','Manchester','New York','London','Nairobi','Kampala','Cairo','Amsterdam'];
 
      
 cuisines.forEach((restaurant, index) => {
-    for (i = 0; i < 50; i++) {
+    location.forEach((city, index) => {
+    for (i = 0; i < 5; i++) {
         function getRandomString(length) {
             var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_';
             var result = '';
@@ -248,7 +250,7 @@ cuisines.forEach((restaurant, index) => {
                                 place_id: `${randomString}`,
                                 name: faker.company.companyName()+` ${restaurant} Restaurant` ,
                                 business_status: "OPERATIONAL",
-                                formatted_address: faker.address.streetName()+', '+faker.address.streetAddress()+', '+faker.address.cityName()+', '+faker.address.state()+ ', '+ faker.address.country(),
+                                formatted_address: faker.address.streetName()+', '+faker.address.streetAddress()+', '+city+', '+faker.address.state()+ ', '+ faker.address.country(),
                                 types: ['restaurant','food','point_of_interest', 'establishment'],
                                 geometry: {location:{lat:faker.address.latitude(),lng:faker.address.longitude()}}
                               
@@ -303,6 +305,7 @@ cuisines.forEach((restaurant, index) => {
             store(req);  
         }
 
+    })
 })
 
     
