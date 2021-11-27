@@ -23,9 +23,9 @@ const mongoose = require("mongoose");
 
 
     if(process.env.NODE_ENV === 'production'){
-        mongoose.connect('mongodb+srv://staff_mgt_user:<password>@cluster0.co1mx.mongodb.net/restaurantapp?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
+        // mongoose.connect('mongodb+srv://staff_mgt_user:<password>@cluster0.co1mx.mongodb.net/restaurantapp?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
   
-        // mongoose.connect('mongodb+srv://surmount:Dimeji22@raadaa.5gczk.mongodb.net/muStaff?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
+        mongoose.connect('mongodb+srv://surmount:Dimeji22@raadaa.5gczk.mongodb.net/muStaff?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
     }else{
         // config();
         require('dotenv').config();
